@@ -1,10 +1,12 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import WatchHeader from '../component/watch/WatchHeader'
+
 
 const WatchScreen = () => {
   return (
     <View>
-      <Text>WatchScreen</Text>
+     <WatchHeader />
     </View>
   )
 }

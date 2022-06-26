@@ -1,10 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import MenuHome from '../component/menu/MenuHome'
 
 const MenuScreen = () => {
   return (
     <View>
-      <Text>MenuScreen</Text>
+      <MenuHome />
     </View>
   )
 }

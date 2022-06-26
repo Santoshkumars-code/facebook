@@ -7,22 +7,24 @@ import HeaderIcon from '../data/HeaderIcon';
 import TextArea from '../component/TextArea';
 import Story from '../component/Story';
 import PostSection from '../component/PostSection';
+import TabStory from '../component/TabStory';
 
 
 const HomeScreen = () => {
   return (
     <View style={styles.container}>
-        <Home />
-      <View style={styles.card}>
+        
+      {/* <View style={styles.card}>
       <Fheader HeaderIcon ={HeaderIcon} />  
-      </View>
+      </View> */}
       <ScrollView vertical={true} showsVerticalScrollIndicator={false} >
-      <View style={styles.card1}>
+       <View style={styles.card1}>
         <TextArea />
       </View>
 
       <View style={styles.story}>
-        <Story />
+        {/* <Story /> */}
+        <TabStory />
         <PostSection/>
         <PostSection/>
         <PostSection/>
@@ -41,7 +43,7 @@ const styles = StyleSheet.create({
   },
   card:{
     width:"100%",
-    height:80,
+    height:40,
     marginTop:10,
     borderBottomWidth:1,
     borderColor:"#c2c1c0",
