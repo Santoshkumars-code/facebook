@@ -10,7 +10,7 @@ import PostSection from '../component/PostSection';
 import TabStory from '../component/TabStory';
 
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
         
@@ -19,7 +19,7 @@ const HomeScreen = () => {
       </View> */}
       <ScrollView vertical={true} showsVerticalScrollIndicator={false} >
        <View style={styles.card1}>
-        <TextArea />
+        <TextArea navigation={navigation}/>
       </View>
 
       <View style={styles.story}>

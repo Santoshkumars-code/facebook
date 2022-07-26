@@ -10,17 +10,17 @@ import React from 'react'
 import Home from '../component/Home'
 
 const Tab =  createMaterialTopTabNavigator();
-const TabScreen = () =>{
+const TabScreen = ({navigation}) =>{
   return(
    <SafeAreaView style={{flex:1}}>
     <View style={{height:50,width:"100%"}}>
     <Home />
     </View>
-     <Tab.Navigator screenOptions={{ headerShown: false }}>
+     <Tab.Navigator>
      
       <Tab.Screen name="H" component={HomeScreen}
        options={{
-        showLabel: false,
+        tabBarShowLabel:false,
         tabBarIcon: ({ color }) => (
             <Image 
             source={{uri:"https://img.icons8.com/material-outlined/96/undefined/home--v2.png"}}
@@ -33,7 +33,7 @@ const TabScreen = () =>{
       />
       <Tab.Screen name="W" component={WatchScreen}
        options={{
-        headerShown:false,
+        tabBarShowLabel:false,
         tabBarIcon: ({ color }) => (
             <Image 
             source={{uri:"https://img.icons8.com/material-outlined/96/undefined/video-playlist.png"}}
@@ -44,9 +44,10 @@ const TabScreen = () =>{
                  
       }} />
       <Tab.Screen name="P" component={PlaceScreen}
-       options={{     
+       options={{   
+        tabBarShowLabel:false,  
         tabBarIcon: ({ tintColor }) => (
-
+           
             <Image color={tintColor}
             source={{uri:"https://img.icons8.com/external-thin-kawalan-studio/96/undefined/external-market-business-thin-kawalan-studio-2.png"}}
             //source={{uri:"https://img.icons8.com/external-tal-revivo-bold-tal-revivo/24/undefined/external-marketplace-with-groceries-and-other-items-isolated-on-white-background-seo-bold-tal-revivo.png"}}
@@ -57,7 +58,7 @@ const TabScreen = () =>{
       }}/>
       <Tab.Screen name="G" component={GameScreen}
        options={{
-        headerShown:false,
+        tabBarShowLabel:false,
         tabBarIcon: ({ color }) => (
             <Image 
             source={{uri:"https://img.icons8.com/ios/100/undefined/facebook-gaming.png"}}
@@ -69,6 +70,7 @@ const TabScreen = () =>{
       }}/>
       <Tab.Screen name="N" component={NotificationScreen}
        options={{
+        tabBarShowLabel:false,
         tabBarIcon: ({ color }) => (
             <Image 
             source={{uri:"https://img.icons8.com/material-outlined/96/undefined/appointment-reminders--v1.png"}}
@@ -81,6 +83,7 @@ const TabScreen = () =>{
       />
       <Tab.Screen name="M" style={{height:1,width:1,marginTop:-20,}} component={MenuScreen}
        options={{
+        tabBarShowLabel:false,
         tabBarIcon: ({ color }) => (
             <Image 
             source={{uri:"https://img.icons8.com/material-outlined/96/undefined/menu--v1.png"}}

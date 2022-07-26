@@ -1,16 +1,15 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import MenuHome from '../component/menu/MenuHome'
 
-const MenuScreen = () => {
+const CreatePostHeader = ({navigation}) => {
   return (
     <View>
-      {/* <MenuHome />  */}
-      <Text>menu</Text>
+      <Text>CreatePostHeader</Text>
+
     </View>
   )
 }
 
-export default MenuScreen
+export default CreatePostHeader
 
 const styles = StyleSheet.create({})
